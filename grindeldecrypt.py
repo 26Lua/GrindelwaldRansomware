@@ -42,7 +42,7 @@ if inputpwd == password: #This line checks that the inputpwd is the same as the 
             contents_decrypted = Fernet(decryptkey).decrypt(contents) #This script decrypts all files, so we just replace all 'encrypt' with 'decrypt' 
             with open(file, "wb") as afile: #We open the file that has had its contents decrypted
                 afile.write(contents_decrypted) #Since all the decrypted contents have been assigned to contents_decrypted, we can just write it back into the file
-                print("Files have been decrypted.")
+                print("File has been decrypted...") #This is in the for loop, so every time a file is decrypted it will send this message, if you don't want this, just remove it from the for loop.
 
 else: #If the password is incorrect
     print("Incorrect password.")
