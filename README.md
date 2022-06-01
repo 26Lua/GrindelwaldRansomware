@@ -1,0 +1,2 @@
+# GrindelwaldRansomware
+ETHICAL ransomware testing.
